@@ -18,6 +18,6 @@ jobs:
 
           python pretrained_model_tuner.py
 
-          dvc metrics show --show-md >> report.md
+          dvc metrics show --md >> report.md
 
           cml send-comment report.md
