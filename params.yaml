@@ -1,5 +1,5 @@
 lr: 0.001
-momentum: 0.01
+momentum: 0.015
 model_name: alexnet
 num_classes: 2
 batch_size: 10
