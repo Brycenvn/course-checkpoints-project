@@ -19,13 +19,13 @@ stages:
         model_name: alexnet
         momentum: 0.01
         num_classes: 2
-        num_epochs: 2
+        num_epochs: 5
     outs:
     - path: model.pt
       hash: md5
-      md5: 9ffa87bce958ef72f0667be9584978b0
+      md5: 142d2d667a4c6a6d2e47a6e8f54a978c
       size: 228053054
     - path: results.json
       hash: md5
-      md5: 8b99e13a711ac5c0655be4444c0980f7
-      size: 110
+      md5: 613addf0fee05a1069f29b8ab25a0c26
+      size: 111
