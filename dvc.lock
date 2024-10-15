@@ -4,12 +4,14 @@ stages:
     cmd: python pretrained_model_tuner.py
     deps:
     - path: hymenoptera_data/
-      md5: 70257f9e4b0b3ec72deeed5e1b880c3b.dir
-      size: 47404368
-      nfiles: 401
+      hash: md5
+      md5: 5541a96fc6b9ced1bfc39f068d9e8a4f.dir
+      size: 47385924
+      nfiles: 398
     - path: pretrained_model_tuner.py
-      md5: 6a7177cbfc33bcbe3e0c28d0b9755166
-      size: 7161
+      hash: md5
+      md5: f3f4c562e2c780697bcf02c5d4428816
+      size: 7352
     params:
       params.yaml:
         batch_size: 10
@@ -20,8 +22,10 @@ stages:
         num_epochs: 2
     outs:
     - path: model.pt
-      md5: 1dfb8744d92660bd6fc00caca8753ca4
-      size: 228053109
+      hash: md5
+      md5: 856664c3577e54e5b0a22c81e38adea5
+      size: 228053054
     - path: results.json
-      md5: 6981548a16fcc96497443aafa9730b40
-      size: 106
+      hash: md5
+      md5: 3f0b3133202ef3d37210d4ccb37c285e
+      size: 110
