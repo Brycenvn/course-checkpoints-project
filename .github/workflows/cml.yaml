@@ -9,7 +9,8 @@ jobs:
       - uses: iterative/setup-cml@v1
       - name: Train model
         run: |
-          # Your ML workflow goes here
+          git config --global --add safe.directory "*"
+          cd DVCLive_experiments
           pip install -r requirements.txt
           dvc get https://github.com/iterative/dataset-registry/ dvc-course/hymenoptera_data
           python pretrained_model_tuner.py
@@ -18,6 +19,6 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         run: |
-          pip install -r requirements.txt
+          echo "## Model Metrics" > report.md
           dvc metrics show --md >> report.md
           cml comment create report.md
